@@ -1,11 +1,12 @@
-import { React, useState, createContext } from "react"
+import React, { useState, createContext } from "react"
 import Header from "./Header"
 import Button from "./Button"
 import './App.css'
 
-const ThemeContext = createContext()
+export const ThemeContext = createContext()
 
-export default function App() {
+const App = () => {
+
     const [theme, setTheme] = useState("dark")
 
     function toggleTheme() {
@@ -22,4 +23,4 @@ export default function App() {
     )
 }
 
-export { ThemeContext }
+export default App

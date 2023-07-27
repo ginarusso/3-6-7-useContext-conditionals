@@ -1,7 +1,7 @@
-import { React, useContext } from "react"
+import React, { useContext } from "react"
 import { ThemeContext } from "./App"
 
-export default function Button() {
+const Button = () => {
     const { theme, toggleTheme } = useContext(ThemeContext)
 
     return (
@@ -10,3 +10,5 @@ export default function Button() {
         </button>
     )
 }
+
+export default Button

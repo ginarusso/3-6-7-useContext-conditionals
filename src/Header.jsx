@@ -1,7 +1,8 @@
-import { React, useContext } from "react"
+import React, { useContext } from "react"
 import { ThemeContext } from "./App"
 
-export default function Header() {
+// export default function Header() {
+const Header = () => {
     const { theme } = useContext(ThemeContext)
 
     return (
@@ -10,3 +11,5 @@ export default function Header() {
         </header>
     )
 }
+
+export default Header
